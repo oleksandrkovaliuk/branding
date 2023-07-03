@@ -1,8 +1,71 @@
 :root{
-
+  --font-Oswald: 'Oswald', sans-serif;
+  --font-Mina:'Mina' , sans-serif;
+  --color-greyblue:#42595E;
+  --color-black:#000000;
 }
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+  }
+  .section-1{
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height:100vh;
+  }
+  .firstpage-wrap{
+    display: flex;
+    justify-content: space-between;
+    padding-inline:106px;
+    height:100vh;
+    align-items:  center;
+  }
+  .firstpage-wrap .firspagetext-wrap{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .firstpage-wrap .firstpage-main-text{
+    margin-bottom:63px;
+    max-width:525px; 
+    font-size:48px;
+    font-family:var(--font-Oswald);
+    font-weight:500;
+    line-height:56px;
+  }
+  .firstpage-wrap .firstpage-list{
+    display:flex;
+    flex-direction: column;
+  }
+  .firstpage-wrap ul{
+    list-style-type: none;
+  }
+  .firstpage-wrap .text-top-bottom{
+    font-size:20px;
+    font-weight:700;
+    line-height:50px;
+    color:var(--color-black);
+  }
+  .firstpage-wrap .discription-text{
+    font-size:20px;
+    font-weight:400;
+    line-height:50px;
+    color:var(--color-black);
+  }
+  .discription-text b{
+    color:var(--color-greyblue);
+  }
+  .firstpage-wrap .first-discription{
+    display:flex;
+    align-items: center;
+  }
+  .yourbrend-wrap img{
+    padding-right: 10px;
+    width: 1000;
+    min-height: 800px;
+    padding-bottom: 20px;
   }
