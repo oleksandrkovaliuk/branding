@@ -23,22 +23,14 @@
   background-image: url(../img/bg.jpg);
   background-repeat: no-repeat;
   margin-bottom: 66px;
+  min-height: 690px;
+  padding: 101px 65px 0 clamp(20px, 5vh, 168px);
+  background-position: right;
 }
 
 .firstpage-wrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  position:relative;
 }
-
-.firstpage-wrap .firspagetext-wrap {
-  margin-left: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .firstpage-wrap .firstpage-main-text {
   margin-bottom: 63px;
   max-width: 525px;
@@ -84,9 +76,9 @@
 }
 
 .yourbrend-wrap {
-  padding-top: 88px;
-  padding-inline: 69px;
-  padding-bottom: 46px;
+  position: absolute;
+  top:0;
+  right:0;
 }
 
 .mainblocktext-wrap {
@@ -487,6 +479,7 @@
   background: #FFF;
   box-shadow: -3px 3px 2px 0px rgba(0, 0, 0, 0.06);
   padding-block: 37px 47px;
+  padding-inline:30px;
 }
 
 .switchblock-wrap .content-type {
@@ -553,8 +546,6 @@
   padding: 11px 27px;
   border-radius: 26px;
   background: rgba(132, 146, 149, 0.20);
-  display: inline-flex;
-  align-items: center;
   color: #000;
   font-size: 14px;
   font-family: proxima-nova, sans-serif;
@@ -562,6 +553,20 @@
   font-weight: 400;
   line-height: 20px;
   border: none;
+  width:100%;
+}
+.switchblock-wrap .available{
+  padding: 11px 27px;
+  border-radius: 26px;
+  background: #849295;
+  color: var(--color-white);
+  font-size: 14px;
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  border: none;
+  width:100%;
 }
 .feutures-section{
   margin-bottom: 100px;
@@ -574,10 +579,11 @@
 
 .feutures-section .arrow-down {
   padding: 10px;
+  transform: rotate(180deg);
 }
 
 .feutures-section .arrow-down.show {
-  transform: rotate(180deg);
+  transform: none;
 }
 
 .feutures-section .allfeuteres-wrap {
@@ -742,4 +748,131 @@
   font-weight: 500;
   line-height: 108px;
   transform: rotate(180deg);
+}
+.mobile{
+  display:none;
+}
+.mobileblock{
+  display:none;
+}
+@media(max-width:1200px){
+    .blocks-wrap{
+    padding-inline:0px;
+    justify-content: center;
+    align-items: center;
+    row-gap: 40px;
+    padding-inline: 0px;
+    flex-direction:column;
+  }
+  .section3-wrap .emmatext-wrap{
+    padding-left:20px;
+  }
+  .text-wrap::before{
+    font-size:200px;
+    top:30px;
+    left:10px;
+  }
+  .text-wrap::after{
+    right:10px;
+    top:20px;
+    font-size:200px;
+  }
+  .text-follow{
+    padding-inline:30px;
+  }
+  .text-follow h3{
+    font-size:42px;
+  }
+  .text-follow h4{
+    line-height:30px;
+  }
+  .section4blocks-wrap{
+    padding-inline:30px;
+  }
+  .bottomsection-wrap .joanna-wrap{
+    padding: 150px 20px 107px;
+    justify-content: center;
+    gap: 40px;
+  }
+  .joanna-text::before{
+    font-size:200px;
+    top:30px;
+    left:0;
+  }
+  .joanna-text h2{
+    font-size:40px;
+  }
+  .joanna-text::after{
+    top:10px;
+    right:10px;
+    font-size:200px;
+  }
+}
+@media(max-width:1080px){
+  .mainblocktext-wrap .textinmainblock{
+    font-size:38px;
+  }
+  .section-3 .emmatext-wrap{
+    flex-direction: column;
+  }
+  .bottomsection-wrap .joanna-wrap{
+    flex-direction: column;
+    padding-block: 20px;
+    gap:20px;
+  }
+  .joanna-wrap .joanna-text h2{
+    margin-bottom:0px;
+  }
+}
+@media(max-width:320px){
+  .section-1{
+    background-image: url(../img/bgmobile.png);
+    position: relative;
+    min-height: 819px;
+    padding-top: 50px;
+    margin-bottom: 22px;
+    padding:0px;
+  }
+  .firstpage-wrap{
+    position:unset;
+  }
+  .firstpage-wrap .firstpage-main-text{
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 25px;
+    line-height: 48px;
+    padding-inline: 33px;
+    padding-top:50px;
+  }
+  .firstpage-list {
+    text-align: center;
+    padding-inline:22px;
+  }
+  .firstpage-wrap .text-top-bottom{
+    line-height: unset;
+    font-size: 16px;
+  }
+  .first-discription .discription-text {
+    line-height: 30px;
+    font-size: 16px;
+  }
+  .yourbrend-wrap {
+    bottom: 40px;
+    top: unset;
+    right: 20px;
+  }
+  .yourbrend-wrap img{
+    display: none;
+  }
+  .yourbrend-wrap .mobile{
+    display:block;
+  }
+  .mobileblock{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  .mobileblock img{
+    max-width: 308px;
+  }
 }
