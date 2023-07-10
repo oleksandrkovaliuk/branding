@@ -23,10 +23,6 @@ annualBtn.addEventListener('click' , () => {
     proBox.querySelector('.money').innerHTML = "250";
 })
 showBlockDown.addEventListener('click' , () => {
-    blockDown.classList.add('show');
-    closeShowblockBtn.classList.add('show');
-})
-closeShowblockBtn.addEventListener('click' , () => {
-    blockDown.classList.remove('show');
-    closeShowblockBtn.classList.remove('show');
+    blockDown.classList.toggle('show');
+    closeShowblockBtn.classList.toggle('show');
 })

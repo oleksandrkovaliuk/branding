@@ -1,0 +1,20 @@
+:root {
+    --font-Oswald: 'Oswald', sans-serif;
+    --font-Mina: 'Mina', sans-serif;
+    --color-greyblue: #42595E;
+    --color-black: #000000;
+    --color-liteblue: #849295;
+    --color-beige: #D4D0CF;
+    --color-white: #fff;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .sitewidth {
+    max-width: 1440px;
+    margin-inline: auto;
+  }
