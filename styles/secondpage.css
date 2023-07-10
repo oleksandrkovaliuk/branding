@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'minacalligraphic_regular';
+    src: url('mina-calligraphicregular-webfont.woff2') format('woff2'),
+         url('mina-calligraphicregular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 .section-1 {
     background-image: url(../img/bg-section3.jpg);
     background-repeat: no-repeat;
@@ -86,6 +94,11 @@
     font-weight: 500;
     line-height: 72px;
     text-transform: uppercase;
+}
+.s2-bottomtextwrap{
+    font-family: 'minacalligraphic_regular';
+    font-weight: normal;
+    font-style: normal;
 }
 
 .top-discription {
