@@ -1,10 +1,9 @@
-@font-face {
-    font-family: 'minacalligraphic_regular';
-    src: url('mina-calligraphicregular-webfont.woff2') format('woff2'),
-         url('mina-calligraphicregular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+@font-face{
+    font-family:"Mina-Calligraphic";
+    src: url("../fonts/Mina-CalligraphicRegular.woff"),
+    url("../fonts/Mina-CalligraphicRegular.woff2");
+    font-display:swap;
+    font-style:normal;
 }
 .section-1 {
     background-image: url(../img/bg-section3.jpg);
@@ -96,9 +95,12 @@
     text-transform: uppercase;
 }
 .s2-bottomtextwrap{
-    font-family: 'minacalligraphic_regular';
-    font-weight: normal;
+    font-family: 'Mina-Calligraphic' , sans-serif;
+    color: var(--color-black);
+    font-weight:400;
+    font-size: 52px;
     font-style: normal;
+    line-height: 62px;
 }
 
 .top-discription {
@@ -172,8 +174,31 @@
     flex-direction: column;
     max-width: 708px;
     margin: auto;
-    margin-bottom: 115px;
+    margin-bottom: 87px;
     align-items: center;
+}
+.s3text-top h2{
+    color: #42595E;
+font-family: var(--font-Oswald);
+font-size: 38px;
+font-style: normal;
+font-weight: 500;
+line-height: 46px;
+margin-bottom:38px;
+}
+.s3text-top h3 , 
+.s3text-top h4{
+    color: var(--color-black);
+    text-align: center;
+    font-family: proxima-nova, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom:28px;
+}
+.s3text-top h4 b{
+    font-weight:700;
 }
 
 .instruction-block {
@@ -194,6 +219,22 @@
 .third-instruction-text h2,
 .second-instruction-text h2 {
     z-index: 1090;
+    color: #8D9B9E;
+font-family: var(--font-Oswald);
+font-size: 38px;
+font-style: normal;
+font-weight: 500;
+line-height: 46px;
+}
+.text-instruction h3,
+.third-instruction-text h3,
+.second-instruction-text h3 {
+    color: #000;
+    font-family: proxima-nova, sans-serif;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
 }
 
 .text-instruction img,
@@ -293,6 +334,7 @@
     border: none;
     background: none;
     padding: 10px 17px;
+    cursor: pointer;
 }
 
 .switcher-wrap .annual.show,
@@ -301,6 +343,7 @@
     background: #FFF;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.20);
     color: #D57A77;
+    cursor: pointer;
 }
 
 .save40-wrap {
@@ -466,6 +509,8 @@
 
 .feutures-section .feuteresblockdown-wrap.show {
     display: block;
+    max-width: 825px;
+    margin: auto;
 }
 
 .feutures-section .feuteresblocks-shows {
@@ -475,6 +520,7 @@
     padding-block: 16px;
     border-top: 1px solid var(--color-liteblue);
     padding-inline: 30px;
+    margin-inline:auto;
 }
 
 .feutures-section .feuteresblocks-shows h3 {
@@ -487,23 +533,21 @@
     line-height: 18px;
 }
 
-.feuteresblocks-shows h3 b {
+.feuteresblocks-shows td b {
     font-weight: 700;
 }
 
 .feutures-section .informationblocks {
     display: flex;
     gap: 67px;
-    max-width: 825px;
     padding-block: 16px;
     border-top: 1px solid black;
     text-align: center;
-    margin-inline: auto;
     justify-content: space-around;
     padding-inline: 30px;
 }
 
-.feutures-section .informationblocks h3 {
+.feutures-section .informationblocks td {
     max-width: 218px;
     color: #000;
     text-align: center;
@@ -527,7 +571,7 @@
     flex-direction: column;
 }
 
-.informationblocks h3 b {
+.informationblocks td b {
     font-weight: 700;
 }
 .bottomsection-wrap{
@@ -594,4 +638,58 @@
     font-weight: 500;
     line-height: 108px;
     transform: rotate(180deg);
+  }
+  @media(max-width:1280px){
+    .bottomsection-wrap .ilse-wrap{
+        padding-block: 20px;
+        padding-inline: 100px;
+        flex-direction: column;
+    }
+  }
+  @media(max-width:1080px){
+    .section-1{
+        background-position: center;
+    }
+    .s2-block .arrow-block{
+        right:10px;
+    }
+    .instruction-block{
+        padding-left: 151px;
+    background-position: center;
+    }
+    .second-instruction-block{
+        padding-left: 0;
+        margin-bottom: 96px;
+    }
+    .third-instruction-block{
+        padding-left: 100px;
+    }
+  }
+  @media(max-width:800px){
+    .s2-block{
+        flex-direction: column;
+    }
+    .second-instruction-block {
+        flex-direction: column;
+    max-width: 350px;
+    margin: auto;
+    gap: 96px;
+    margin-bottom: 96px;
+    }
+    .third-instruction-block{
+        max-width: 350px;
+        margin: auto;
+        padding-left: 0px;
+        flex-direction: column-reverse;
+        gap: 96px;
+        margin-bottom: 96px;
+    }
+    .switchblocks{
+        flex-direction: column;
+    align-items: center;
+    }
+    .ilse-text h2{
+        font-size: 32px;
+        line-height: 48px;
+    }
   }

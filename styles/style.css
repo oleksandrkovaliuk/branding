@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
   margin-bottom: 66px;
   min-height: 690px;
-  padding: 101px 65px 0 clamp(20px, 5vh, 168px);
+  padding: 101px 65px 0 clamp(40px, 8vw, 168px);
   background-position: right;
 }
 
@@ -389,6 +389,7 @@
   border: none;
   background: none;
   padding: 10px 17px;
+  cursor: pointer;
 }
 .switcher-wrap .annual.show , 
 .switcher-wrap .monthly.show {
@@ -396,6 +397,7 @@
   background: #FFF;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.20);
   color: #D57A77;
+  cursor: pointer;
 }
 
 .save40-wrap {
@@ -547,6 +549,8 @@
 
 .feutures-section .feuteresblockdown-wrap.show {
   display: block;
+  max-width: 825px;
+  margin: auto;
 }
 
 .feutures-section .feuteresblocks-shows {
@@ -556,6 +560,7 @@
   padding-block: 16px;
   border-top: 1px solid var(--color-liteblue);
   padding-inline: 30px;
+  margin-inline:auto;
 }
 
 .feutures-section .feuteresblocks-shows h3 {
@@ -568,23 +573,21 @@
   line-height: 18px;
 }
 
-.feuteresblocks-shows h3 b {
+.feuteresblocks-shows td tr {
   font-weight: 700;
 }
 
 .feutures-section .informationblocks {
   display: flex;
   gap: 67px;
-  max-width: 825px;
   padding-block: 16px;
   border-top: 1px solid black;
   text-align: center;
-  margin-inline: auto;
   justify-content: space-around;
   padding-inline: 30px;
 }
 
-.feutures-section .informationblocks h3 {
+.feutures-section .informationblocks td {
   max-width: 218px;
   color: #000;
   text-align: center;
@@ -845,7 +848,8 @@
   }
   .bottomsection-wrap .joanna-wrap{
     flex-direction: column;
-    padding-block: 0px;
+    padding-block: 10px;
+    padding-inline: 0;
     gap: 0px;
   }
   .bottomsection-wrap .joanna-text h2{
