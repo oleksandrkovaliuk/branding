@@ -1,10 +1,11 @@
-@font-face{
-    font-family:"Mina-Calligraphic";
+@font-face {
+    font-family: "Mina-Calligraphic";
     src: url("../fonts/Mina-CalligraphicRegular.woff"),
-    url("../fonts/Mina-CalligraphicRegular.woff2");
-    font-display:swap;
-    font-style:normal;
+        url("../fonts/Mina-CalligraphicRegular.woff2");
+    font-display: swap;
+    font-style: normal;
 }
+
 .section-1 {
     background-image: url(../img/bg-section3.jpg);
     background-repeat: no-repeat;
@@ -94,10 +95,11 @@
     line-height: 72px;
     text-transform: uppercase;
 }
-.s2-bottomtextwrap{
-    font-family: 'Mina-Calligraphic' , sans-serif;
+
+.s2-bottomtextwrap {
+    font-family: 'Mina-Calligraphic', sans-serif;
     color: var(--color-black);
-    font-weight:400;
+    font-weight: 400;
     font-size: 52px;
     font-style: normal;
     line-height: 62px;
@@ -177,17 +179,19 @@
     margin-bottom: 87px;
     align-items: center;
 }
-.s3text-top h2{
+
+.s3text-top h2 {
     color: #42595E;
-font-family: var(--font-Oswald);
-font-size: 38px;
-font-style: normal;
-font-weight: 500;
-line-height: 46px;
-margin-bottom:38px;
+    font-family: var(--font-Oswald);
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 46px;
+    margin-bottom: 38px;
 }
-.s3text-top h3 , 
-.s3text-top h4{
+
+.s3text-top h3,
+.s3text-top h4 {
     color: var(--color-black);
     text-align: center;
     font-family: proxima-nova, sans-serif;
@@ -195,10 +199,11 @@ margin-bottom:38px;
     font-style: normal;
     font-weight: 400;
     line-height: 26px;
-    margin-bottom:28px;
+    margin-bottom: 28px;
 }
-.s3text-top h4 b{
-    font-weight:700;
+
+.s3text-top h4 b {
+    font-weight: 700;
 }
 
 .instruction-block {
@@ -216,34 +221,35 @@ margin-bottom:38px;
 }
 
 .text-instruction h2,
-.third-instruction-text h2
- {
+.third-instruction-text h2 {
     z-index: 1090;
     color: #8D9B9E;
-font-family: var(--font-Oswald);
-font-size: 38px;
-font-style: normal;
-font-weight: 500;
-line-height: 46px;
+    font-family: var(--font-Oswald);
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 46px;
 }
-.second-instruction-text h2{
+
+.second-instruction-text h2 {
     color: #DE7A77;
     font-family: var(--font-Oswald);
-font-size: 38px;
-font-style: normal;
-font-weight: 500;
-line-height: 46px;
-z-index: 1090;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 46px;
+    z-index: 1090;
 }
+
 .text-instruction h3,
-.third-instruction-text h3 ,
+.third-instruction-text h3,
 .second-instruction-text h3 {
     color: #000;
     font-family: proxima-nova, sans-serif;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
 }
 
 .text-instruction .number,
@@ -253,7 +259,8 @@ line-height: 24px;
     left: -50px;
     top: -30px;
 }
-.third-instruction-text .number3{
+
+.third-instruction-text .number3 {
     position: absolute;
     top: -30px;
     left: -70px;
@@ -534,7 +541,7 @@ line-height: 24px;
     padding-block: 16px;
     border-top: 1px solid var(--color-liteblue);
     padding-inline: 30px;
-    margin-inline:auto;
+    margin-inline: auto;
 }
 
 .feutures-section .feuteresblocks-shows h3 {
@@ -588,24 +595,28 @@ line-height: 24px;
 .informationblocks td b {
     font-weight: 700;
 }
-.bottomsection-wrap{
+
+.bottomsection-wrap {
     background-image: url(../img/bottom-section.png);
     background-repeat: no-repeat;
-  }
-  .bottomsection-wrap .ilse-wrap {
+}
+
+.bottomsection-wrap .ilse-wrap {
     display: flex;
     align-items: center;
     padding: 150px 230px 107px;
     width: 100%;
     justify-content: space-between;
-  }
-  .bottomsection-wrap .ilse-text{
+}
+
+.bottomsection-wrap .ilse-text {
     display: flex;
     flex-direction: column;
     position: relative;
     align-items: center;
-  }
-  .ilse-text h2 {
+}
+
+.ilse-text h2 {
     color: var(--color-greyblue);
     text-align: center;
     font-size: 36px;
@@ -616,8 +627,9 @@ line-height: 24px;
     max-width: 590px;
     z-index: 1090;
     margin-bottom: 40px;
-  }
-  .ilse-text h4{
+}
+
+.ilse-text h4 {
     color: var(--color-black);
     text-align: center;
     font-size: 30px;
@@ -625,8 +637,9 @@ line-height: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: 30px;
-  }
-  .ilse-text::before {
+}
+
+.ilse-text::before {
     content: '“';
     position: absolute;
     top: 46px;
@@ -638,8 +651,9 @@ line-height: 24px;
     font-style: normal;
     font-weight: 500;
     line-height: 108px;
-  }
-  .ilse-text::after {
+}
+
+.ilse-text::after {
     content: '“';
     position: absolute;
     top: 12px;
@@ -652,31 +666,37 @@ line-height: 24px;
     font-weight: 500;
     line-height: 108px;
     transform: rotate(180deg);
-  }
-  @media(max-width:1280px){
-    .bottomsection-wrap .ilse-wrap{
+}
+
+@media(max-width:1280px) {
+    .bottomsection-wrap .ilse-wrap {
         padding-block: 20px;
         padding-inline: 100px;
         flex-direction: column;
     }
-    .second-instruction-block{
+
+    .second-instruction-block {
         padding-left: 0;
         margin-bottom: 96px;
     }
-    .third-instruction-block{
+
+    .third-instruction-block {
         padding-left: 100px;
     }
-    .s2-block{
+
+    .s2-block {
         flex-direction: column;
     }
+
     .second-instruction-block {
         flex-direction: column;
-    max-width: 350px;
-    margin: auto;
-    gap: 96px;
-    margin-bottom: 96px;
+        max-width: 350px;
+        margin: auto;
+        gap: 96px;
+        margin-bottom: 96px;
     }
-    .third-instruction-block{
+
+    .third-instruction-block {
         max-width: 350px;
         margin: auto;
         padding-left: 0px;
@@ -684,112 +704,139 @@ line-height: 24px;
         gap: 96px;
         margin-bottom: 96px;
     }
-  }
-  @media(max-width:1080px){
-    .section-1{
+}
+
+@media(max-width:1080px) {
+    .section-1 {
         background-position: center;
     }
-    .s2-block .arrow-block{
-        right:10px;
+
+    .s2-block .arrow-block {
+        right: 10px;
     }
-    .instruction-block{
+
+    .instruction-block {
         padding-left: 151px;
-    background-position: center;
+        background-position: center;
     }
-    .switchblocks{
+
+    .switchblocks {
         flex-direction: column;
-    align-items: center;
+        align-items: center;
     }
-  }
-  @media(max-width:768px){
-    .sectionwrap-1{
+}
+
+@media(max-width:768px) {
+    .sectionwrap-1 {
         padding-top: 20px;
-    gap: 20px;
-    padding-bottom: 0px;
+        gap: 20px;
+        padding-bottom: 0px;
     }
-    .section1-text h1{
+
+    .section1-text h1 {
         font-size: 32px;
         line-height: 48px;
     }
-    .startBtn{
-        font-size:20px;
+
+    .startBtn {
+        font-size: 20px;
     }
-    .section2-wrap{
-        padding-inline:20px;
+
+    .section2-wrap {
+        padding-inline: 20px;
     }
-    .s2-block{
+
+    .s2-block {
         flex-direction: column;
     }
-    .s2-toptextwrap{
+
+    .s2-toptextwrap {
         flex-direction: column;
     }
-    .s2-bottomtextwrap{
-        text-align:center;
+
+    .s2-bottomtextwrap {
+        text-align: center;
     }
-    .s2block-txtwrap{
-        padding-inline:20px;
+
+    .s2block-txtwrap {
+        padding-inline: 20px;
     }
-    .s3text-top{
-        text-align:center;
+
+    .s3text-top {
+        text-align: center;
     }
-    .instruction-block{
+
+    .instruction-block {
         padding-inline: 10px
     }
-    .text-instruction , .second-instruction-text,
-    .third-instruction-text{
+
+    .text-instruction,
+    .second-instruction-text,
+    .third-instruction-text {
         text-align: center;
         margin: auto;
-     }
-     .text-instruction .number,
-.second-instruction-text .number,
-.third-instruction-text .number3{
-    display:none;
+    }
+
+    .text-instruction .number,
+    .second-instruction-text .number,
+    .third-instruction-text .number3 {
+        display: none;
+    }
+
+    .second-instruction-block img,
+    .third-instruction-block img {
+        max-width: 320px;
+    }
+
+    .text-instruction h2,
+    .third-instruction-text h2,
+    .second-instruction-text h2 {
+        font-size: 32px;
+        line-height: 48px;
+    }
+
+    .section-4 .uptext-main {
+        font-size: 32px;
+        line-height: 48px;
+    }
+
+    .feutures-section .feuteresblocks-shows {
+        padding-inline: 0px;
+        gap: 30px;
+    }
+
+    .feutures-section .informationblocks {
+        gap: 10px;
+        padding-inline: 0px;
+    }
+
+    .bottomsection-wrap .ilse-wrap {
+        flex-direction: column;
+        padding-top: 5px;
+        padding-inline: 0;
+        padding-bottom: 0px;
+        gap: 0px;
+    }
+
+    .ilse-text::before {
+        top: 6px;
+        left: -5px;
+        font-size: 186px;
+    }
+
+    .ilse-text::after {
+        bottom: 20px;
+        right: 0px;
+        font-size: 186px;
+    }
+
+    .ilse-text h2 {
+        margin-bottom: 0px;
+        line-height: 40px;
+        font-size: 32px;
+    }
+
+    .ilse-text h4 {
+        font-size: 20px
+    }
 }
-.second-instruction-block img,
-.third-instruction-block img{
-    max-width:320px;
-}
-.text-instruction h2,
-.third-instruction-text h2,
-.second-instruction-text h2{
-    font-size:32px;
-    line-height:48px;
-}
-.section-4 .uptext-main{
-    font-size: 32px;
-    line-height: 48px;
-}
-.feutures-section .feuteresblocks-shows{
-    padding-inline: 0px;
-    gap: 30px;
-}
-.feutures-section .informationblocks{
-    gap: 10px;
-    padding-inline: 0px;
-}
-.bottomsection-wrap .ilse-wrap{
-    flex-direction: column;
-    padding-top: 5px;
-    padding-inline: 0;
-    padding-bottom: 0px;
-    gap: 0px;
-}
-.ilse-text::before{
-    top:6px;
-    left:-5px;
-    font-size:186px;
-}
-.ilse-text::after{
-    bottom: 20px;
-    right: 0px;
-    font-size: 186px;
-}
-.ilse-text h2{
-    margin-bottom: 0px;
-    line-height: 40px;
-    font-size: 32px;
-}
-.ilse-text h4{
-    font-size:20px
-}
-  }
