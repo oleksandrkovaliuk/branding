@@ -216,8 +216,8 @@ margin-bottom:38px;
 }
 
 .text-instruction h2,
-.third-instruction-text h2,
-.second-instruction-text h2 {
+.third-instruction-text h2
+ {
     z-index: 1090;
     color: #8D9B9E;
 font-family: var(--font-Oswald);
@@ -226,8 +226,17 @@ font-style: normal;
 font-weight: 500;
 line-height: 46px;
 }
+.second-instruction-text h2{
+    color: #DE7A77;
+    font-family: var(--font-Oswald);
+font-size: 38px;
+font-style: normal;
+font-weight: 500;
+line-height: 46px;
+z-index: 1090;
+}
 .text-instruction h3,
-.third-instruction-text h3,
+.third-instruction-text h3 ,
 .second-instruction-text h3 {
     color: #000;
     font-family: proxima-nova, sans-serif;
@@ -237,12 +246,17 @@ font-weight: 400;
 line-height: 24px;
 }
 
-.text-instruction img,
-.second-instruction-text img,
-.third-instruction-text img {
+.text-instruction .number,
+.second-instruction-text .number,
+.third-instruction-text .number {
     position: absolute;
     left: -50px;
     top: -30px;
+}
+.third-instruction-text .number3{
+    position: absolute;
+    top: -30px;
+    left: -70px;
 }
 
 .second-instruction-block {
@@ -645,18 +659,6 @@ line-height: 24px;
         padding-inline: 100px;
         flex-direction: column;
     }
-  }
-  @media(max-width:1080px){
-    .section-1{
-        background-position: center;
-    }
-    .s2-block .arrow-block{
-        right:10px;
-    }
-    .instruction-block{
-        padding-left: 151px;
-    background-position: center;
-    }
     .second-instruction-block{
         padding-left: 0;
         margin-bottom: 96px;
@@ -664,8 +666,6 @@ line-height: 24px;
     .third-instruction-block{
         padding-left: 100px;
     }
-  }
-  @media(max-width:800px){
     .s2-block{
         flex-direction: column;
     }
@@ -684,12 +684,112 @@ line-height: 24px;
         gap: 96px;
         margin-bottom: 96px;
     }
+  }
+  @media(max-width:1080px){
+    .section-1{
+        background-position: center;
+    }
+    .s2-block .arrow-block{
+        right:10px;
+    }
+    .instruction-block{
+        padding-left: 151px;
+    background-position: center;
+    }
     .switchblocks{
         flex-direction: column;
     align-items: center;
     }
-    .ilse-text h2{
+  }
+  @media(max-width:768px){
+    .sectionwrap-1{
+        padding-top: 20px;
+    gap: 20px;
+    padding-bottom: 0px;
+    }
+    .section1-text h1{
         font-size: 32px;
         line-height: 48px;
     }
+    .startBtn{
+        font-size:20px;
+    }
+    .section2-wrap{
+        padding-inline:20px;
+    }
+    .s2-block{
+        flex-direction: column;
+    }
+    .s2-toptextwrap{
+        flex-direction: column;
+    }
+    .s2-bottomtextwrap{
+        text-align:center;
+    }
+    .s2block-txtwrap{
+        padding-inline:20px;
+    }
+    .s3text-top{
+        text-align:center;
+    }
+    .instruction-block{
+        padding-inline: 10px
+    }
+    .text-instruction , .second-instruction-text,
+    .third-instruction-text{
+        text-align: center;
+        margin: auto;
+     }
+     .text-instruction .number,
+.second-instruction-text .number,
+.third-instruction-text .number3{
+    display:none;
+}
+.second-instruction-block img,
+.third-instruction-block img{
+    max-width:320px;
+}
+.text-instruction h2,
+.third-instruction-text h2,
+.second-instruction-text h2{
+    font-size:32px;
+    line-height:48px;
+}
+.section-4 .uptext-main{
+    font-size: 32px;
+    line-height: 48px;
+}
+.feutures-section .feuteresblocks-shows{
+    padding-inline: 0px;
+    gap: 30px;
+}
+.feutures-section .informationblocks{
+    gap: 10px;
+    padding-inline: 0px;
+}
+.bottomsection-wrap .ilse-wrap{
+    flex-direction: column;
+    padding-top: 5px;
+    padding-inline: 0;
+    padding-bottom: 0px;
+    gap: 0px;
+}
+.ilse-text::before{
+    top:6px;
+    left:-5px;
+    font-size:186px;
+}
+.ilse-text::after{
+    bottom: 20px;
+    right: 0px;
+    font-size: 186px;
+}
+.ilse-text h2{
+    margin-bottom: 0px;
+    line-height: 40px;
+    font-size: 32px;
+}
+.ilse-text h4{
+    font-size:20px
+}
   }
