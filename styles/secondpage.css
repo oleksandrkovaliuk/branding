@@ -141,12 +141,13 @@
 
 .s2-block .arrow-block {
     position: absolute;
-    right: -35px;
+    /* right: -35px; */
+    right:10px;
     top: 41px;
 }
 
 .s2block-txtwrap {
-    padding-top: 44px;
+    /* padding-top: 44px; */
 }
 
 .s2block-txtwrap h2 {
