@@ -126,28 +126,9 @@
     font-weight: 700;
 }
 
-.s2-block {
-    display: flex;
-    max-width: 920px;
-    margin: auto;
-    margin-top: -222px;
-    gap: 30px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: -3px 3px 2px 0px rgba(0, 0, 0, 0.06);
-    position: relative;
-    margin-bottom: 108px;
-}
-
-.s2-block .arrow-block {
-    position: absolute;
-    /* right: -35px; */
-    right:10px;
-    top: 41px;
-}
-
 .s2block-txtwrap {
-    /* padding-top: 44px; */
+    padding-top: 44px;
+    padding-inline: 10px;
 }
 
 .s2block-txtwrap h2 {
@@ -158,6 +139,9 @@
     font-weight: 400;
     line-height: 42px;
     margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .s2block-txtwrap h3,
@@ -217,7 +201,6 @@
     max-width: 456px;
     display: flex;
     flex-direction: column;
-    position: relative;
     gap: 25px;
 }
 
@@ -230,6 +213,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: 46px;
+    position:relative;
 }
 
 .second-instruction-text h2 {
@@ -239,7 +223,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: 46px;
-    z-index: 1090;
+    position:relative;
 }
 
 .text-instruction h3,
@@ -258,13 +242,8 @@
 .third-instruction-text .number {
     position: absolute;
     left: -50px;
-    top: -30px;
-}
-
-.third-instruction-text .number3 {
-    position: absolute;
-    top: -30px;
-    left: -70px;
+    top: -20px;
+    z-index: -1;
 }
 
 .second-instruction-block {
@@ -675,7 +654,6 @@
         padding-inline: 100px;
         flex-direction: column;
     }
-
     .second-instruction-block {
         padding-left: 0;
         margin-bottom: 96px;
@@ -683,10 +661,6 @@
 
     .third-instruction-block {
         padding-left: 100px;
-    }
-
-    .s2-block {
-        flex-direction: column;
     }
 
     .second-instruction-block {
@@ -705,17 +679,22 @@
         gap: 96px;
         margin-bottom: 96px;
     }
+    .ilse-text::after{
+        line-height: 0px;
+        font-size: 100px;
+        bottom: 100px;
+        right: -40px;
+    }
+    .ilse-text::before{
+        line-height: 0px;
+        font-size: 100px;
+    }
 }
 
 @media(max-width:1080px) {
     .section-1 {
         background-position: center;
     }
-
-    .s2-block .arrow-block {
-        right: 10px;
-    }
-
     .instruction-block {
         padding-left: 151px;
         background-position: center;
@@ -724,6 +703,15 @@
     .switchblocks {
         flex-direction: column;
         align-items: center;
+    }
+    .s2block-txtwrap h2{
+        align-items: unset;
+        justify-content: unset;
+        flex-direction: column-reverse;
+    }
+    .s2block-txtwrap {
+        padding-inline: 20px;
+        padding-top: 0px;
     }
 }
 
@@ -758,11 +746,6 @@
     .s2-bottomtextwrap {
         text-align: center;
     }
-
-    .s2block-txtwrap {
-        padding-inline: 20px;
-    }
-
     .s3text-top {
         text-align: center;
     }
@@ -780,7 +763,7 @@
 
     .text-instruction .number,
     .second-instruction-text .number,
-    .third-instruction-text .number3 {
+    .third-instruction-text .number {
         display: none;
     }
 
@@ -813,31 +796,39 @@
 
     .bottomsection-wrap .ilse-wrap {
         flex-direction: column;
-        padding-top: 5px;
         padding-inline: 0;
         padding-bottom: 0px;
         gap: 0px;
+        padding-block: 20px;
     }
 
     .ilse-text::before {
-        top: 6px;
-        left: -5px;
-        font-size: 186px;
+        left: 0px;
+    font-size: 100px;
+    top: 20px;
     }
 
     .ilse-text::after {
-        bottom: 20px;
-        right: 0px;
-        font-size: 186px;
+        right: 40px;
+    bottom: 60px;
+    font-size: 100px;
     }
 
     .ilse-text h2 {
         margin-bottom: 0px;
-        line-height: 40px;
-        font-size: 32px;
+        font-size: 24px;
+        line-height: 32px;
     }
 
     .ilse-text h4 {
         font-size: 20px
+    }
+}
+@media(max-width:320px){
+    .bottomsection-wrap .ilse-wrap {
+        padding-block: 10px;
+    }
+    .ilse-text::after{
+        bottom:67px;
     }
 }

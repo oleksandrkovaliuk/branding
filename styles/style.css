@@ -711,7 +711,19 @@
 .mobileblock {
   display: none;
 }
-
+@media(max-width:1280px) {
+  .joanna-text::after {
+    top: 100px;
+    right: 10px;
+    font-size: 150px;
+    line-height: 0px;
+  }
+  .joanna-text::before {
+    left: 10px;
+    font-size: 150px;
+    line-height: 0px;
+  }
+}
 @media(max-width:1200px) {
   .section-1 {
     background-image: url(../img/bgmobile.png);
@@ -792,21 +804,8 @@
     justify-content: center;
     gap: 40px;
   }
-
-  .joanna-text::before {
-    font-size: 200px;
-    top: 30px;
-    left: 0;
-  }
-
   .joanna-text h2 {
     font-size: 40px;
-  }
-
-  .joanna-text::after {
-    top: 10px;
-    right: 10px;
-    font-size: 200px;
   }
 }
 
@@ -843,6 +842,17 @@
   .emmatext-wrap .text-wrap h2 {
     font-size: 42px;
     line-height: 50px;
+  }
+  .text-wrap::before {
+    font-size: 150px;
+    top: -10px;
+    left: 10px;
+  }
+
+  .text-wrap::after {
+    right: 10px;
+    font-size: 150px;
+    top: -10px;
   }
 
   .bottomblock-wrap {
@@ -916,6 +926,14 @@
   .bottomsection-wrap .joanna-text h4 {
     font-size: 20px;
   }
+  .joanna-text::before{
+    left: 5px;
+    font-size: 100px;
+  }
+  .joanna-text::after{
+    top: 100px;
+    font-size: 100px;
+  }
 }
 
 @media(max-width:500px) {
@@ -933,6 +951,9 @@
   .mobileblock img {
     width: 100%;
   }
+  .text-wrap::after {
+    top: 50px;
+  }
 }
 
 @media(max-width:320px) {
@@ -942,5 +963,8 @@
 
   .firstpage-wrap .mobileblock {
     padding-top: 110px;
+  }
+  .text-wrap::after {
+    top: 100px;
   }
 }
