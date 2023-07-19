@@ -505,13 +505,19 @@
 }
 
 .feutures-section .feuteresblockdown-wrap {
-    display: none;
+    height: 69px;
+    display: block;
+    overflow: hidden;
+    max-width: 825px;
+    margin: auto;
 }
 
 .feutures-section .feuteresblockdown-wrap.show {
     display: block;
     max-width: 825px;
     margin: auto;
+    overflow: unset;
+    height:unset;
 }
 
 .feutures-section .feuteresblocks-shows {
